@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: locnd-coworking
-        image: 463284152732.dkr.ecr.us-east-1.amazonaws.com/locnd-coworking-analytic:latest
+        image: 463284152732.dkr.ecr.us-east-1.amazonaws.com/locnd-coworking-analytic:2
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
