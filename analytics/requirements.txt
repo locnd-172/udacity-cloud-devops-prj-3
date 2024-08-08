@@ -1,0 +1,5 @@
+apscheduler
+flask
+psycopg2-binary
+flask_sqlalchemy
+e
