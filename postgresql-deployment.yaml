@@ -16,11 +16,11 @@ spec:
         image: postgres:latest
         env:
         - name: POSTGRES_DB
-          value: mydatabase
+          value: locnd_postgre_db
         - name: POSTGRES_USER
-          value: myuser
+          value: locnd
         - name: POSTGRES_PASSWORD
-          value: N75h8yM447gBLjso
+          value: locndpassword
         ports:
         - containerPort: 5432
         volumeMounts:

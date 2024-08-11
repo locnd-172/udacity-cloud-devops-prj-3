@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: locnd-coworking
-        image: 463284152732.dkr.ecr.us-east-1.amazonaws.com/locnd-coworking-analytic:2
+        image: 463284152732.dkr.ecr.us-east-1.amazonaws.com/locnd-coworking-analytic:4
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
@@ -47,8 +47,8 @@ spec:
           initialDelaySeconds: 5
           timeoutSeconds: 5
         envFrom:
-          - secretRef:
-              name: locnd-postgresql-secrets
           - configMapRef:
               name: locnd-postgresql-configmap
+          - secretRef:
+              name: locnd-postgresql-secrets
       restartPolicy: Always

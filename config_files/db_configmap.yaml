@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: locnd-postgresql-configmap
 data:
-  DB_USERNAME: "myuser"
-  DB_NAME: "mydatabase"
+  DB_USERNAME: "locnd"
+  DB_NAME: "locnd_postgre_db"
   DB_HOST: "postgresql-service"
   DB_PORT: "5432"
